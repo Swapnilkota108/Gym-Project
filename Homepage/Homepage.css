@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header>*{
+    padding: 1rem;
+}
+
+
+.signin{
+    margin-left: auto;
+    margin-right: 1rem;
+}
