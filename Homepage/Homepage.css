@@ -1,24 +1,56 @@
+:root{
+    --border-color:rgb(45, 42, 42);
+    --theme-color:red;
+}
+
 body{
     margin: 0;
     height: 100vh;
     width: 100vw;
+}
+header,.auth-elements,.header-elements{
+    display: flex;
+    gap: 1rem;
 }
 
 header{
     width: 100%;
     height: 5rem;
     padding: 1rem;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.0);
     
 }
 header>*{
     padding: 1rem;
 }
-
-
-.signin{
+.header-elements{
+    width: 50%;
+    margin-left: 3rem;
+}
+.categories{
+    border-style: none;
+    background-color: #fff;
+}
+.auth-elements{
     margin-left: auto;
     margin-right: 1rem;
+}
+#search-input{
+    width: 70%;
+    height: 3rem;
+    border-radius: 1rem;
+    border-style: none;
+    border: 2px solid var(--border-color)
+}
+.auth-btn{
+    width: 4rem;
+    height: 2.5rem ;
+    cursor: pointer;
+    border: none;
+    background-color: var(--theme-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
 }
