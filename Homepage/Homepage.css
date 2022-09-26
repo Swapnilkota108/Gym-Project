@@ -68,9 +68,9 @@ header>*{
     border-style: none;
     border: 2px solid var(--border-color)
 }
-.auth-btn{
-    width: 4rem;
-    height: 2.5rem ;
+.btn{
+    min-width: none;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
     border: none;
     background-color: var(--theme-color);
@@ -95,12 +95,24 @@ gap: 1rem;
 margin-top: 2.2rem;
 margin-bottom: 2.2rem;
 }
-.category{
+.category-image-container{
     width: 49%;
+    position: relative;
+}
+.category{
+    width: 100%;
     height: 20rem;
     border-radius: 8px;
     object-fit: cover;
 }
+.categories-btn{
+    position: absolute;
+    top: 78%;
+    left: 40%;
+    min-width: 7rem;
+    padding: 0.7rem;
+}
+
 footer{
     height: 12rem;
     flex-direction: column;
