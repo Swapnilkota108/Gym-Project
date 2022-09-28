@@ -1,6 +1,7 @@
 :root{
     --border-color:rgb(45, 42, 42);
     --theme-color:red;
+    --dark--theme--color:#111;
 }
 *{
     font-family: 'Merriweather', serif;
@@ -34,6 +35,13 @@ header{
     box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
     align-items: center;
     justify-content: space-between;
+    background-color:var(--dark--theme--color);
+   }
+
+.options{
+           background-color: var(--theme-color);
+           color: #fff;
+           font-weight: 600;
    }
 
 #main{
@@ -55,7 +63,8 @@ header>*{
 }
 .categories{
     border-style: none;
-    background-color: #fff;
+    background-color: var(--dark--theme--color);
+    color: #fff;
 }
 .auth-elements{
     margin-left: auto;
@@ -104,6 +113,7 @@ margin-bottom: 2.2rem;
     height: 20rem;
     border-radius: 8px;
     object-fit: cover;
+    filter:brightness(50%) ;
 }
 .categories-btn{
     position: absolute;
@@ -116,7 +126,7 @@ margin-bottom: 2.2rem;
 footer{
     height: 12rem;
     flex-direction: column;
-    background-color: #1c1d1f;
+    background-color:var(--dark--theme--color);
     padding: 0 2.5rem;
 
 }
