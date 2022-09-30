@@ -15,13 +15,14 @@ html{
 }
 
 body{
+    flex-direction: column;
     margin: 0;
     padding: 0%;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
 }
-header,.auth-elements,.header-elements, footer, .footer-categories, .social-handles{
+body,header,.auth-elements,.header-elements, footer, .footer-categories, .social-handles{
     display: flex;
     gap: 1rem;
 }
@@ -129,6 +130,7 @@ footer{
     flex-direction: column;
     background-color:var(--dark--theme--color);
     padding: 0 2.5rem;
+    margin-top: auto;
 
 }
 .footer-categories{
@@ -145,4 +147,31 @@ footer{
 }
 .icon{
     margin: 0 0.5rem;
+}
+.workout-sections{
+    display: flex;
+    gap: 1rem;
+}
+.section {
+    width: 23%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.section:hover{
+   width: 25%;
+}
+.section-image:hover{
+    filter: brightness(100%);
+}
+
+.section-image{
+    width: 100%;
+    border-radius: 5px;
+    filter: brightness(50%);
+}
+.section-title{
+    text-align: center;
+    color: var(--theme-color);
+    font-size: 1rem;
 }
