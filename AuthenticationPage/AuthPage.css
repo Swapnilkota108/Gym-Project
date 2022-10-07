@@ -1,0 +1,23 @@
+.signup-container{
+    width: 25rem;
+    padding: 1rem;
+    text-align: center;
+    height: max-content;
+}
+
+.signup-input{
+    margin: .5rem;
+    width: 100%;
+    border:2px solid black;
+    font-size: 1rem;
+    resize: none;
+    padding-top: 1rem; 
+    padding-left: 1rem;
+    font-weight: 400;
+    color:black;
+    height: 2.5rem;
+}
+
+.signup-btn{
+    margin-top: 1rem;
+}
