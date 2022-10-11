@@ -175,3 +175,24 @@ footer{
     color: var(--theme-color);
     font-size: 1rem;
 }
+.variation-container{
+    display: flex;
+    width: 93%;
+    height: 10rem;
+    padding: 1rem 3.2rem;
+    align-items: center;
+}
+.variation-title{
+    color: var(--dark--theme--color);
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.variation-image{
+height: 100%;
+width: 15rem;
+border-radius: 5px;
+}
+.variation-arrow{
+    margin-left: auto;
+}
