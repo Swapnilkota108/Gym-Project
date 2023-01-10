@@ -183,6 +183,7 @@ footer{
    
     header{
      padding: 10px;
+     width: 96%;
     }
     #main{
         padding: 25px;
@@ -201,5 +202,9 @@ footer{
     }
     footer{
         padding: 0 1rem;
+    }
+    .icon-tabler-menu-2{
+        display:block;
+        padding-left: 1rem;
     }
  }

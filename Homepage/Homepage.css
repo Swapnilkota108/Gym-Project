@@ -80,6 +80,9 @@ header>*{
     border-style: none;
     border: 2px solid var(--border-color)
 }
+.icon-tabler-menu-2{
+    display: none;
+}
 .btn{
     min-width: none;
     padding: 0.6rem 1.2rem;
@@ -155,14 +158,20 @@ footer{
     .header-elements,.auth-elements{
         display: none;
     }
-   
     header{
      padding: 10px;
     }
     #main{
         padding: 25px;
     }
+    footer{
+        padding: 0 1rem;
+    }
     .category-image-container{
         width: 100%;
+    }
+    .icon-tabler-menu-2{
+        display:block;
+        padding-left: 1rem;
     }
  }

@@ -198,4 +198,11 @@ footer{
     .Page-title{
         font-size: 1.6rem;
     }
+    .icon-tabler-menu-2{
+        display:block;
+        padding-left: 1rem;
+    }
+    footer{
+        padding: 0 1rem;
+    }
  }

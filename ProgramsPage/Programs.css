@@ -72,6 +72,10 @@ header>*{
     margin-left: auto;
     margin-right: 5rem;
 }
+.icon-tabler-menu{
+    display: none;
+   
+}
 #search-input{
     width: 70%;
     height: 2.5rem;
@@ -199,4 +203,9 @@ footer{
     .Page-title{
         font-size: 1.6rem;
     }
+    .icon-tabler-menu-2{
+        display:block;
+        padding-left: 1rem;
+    }
+    
  }
