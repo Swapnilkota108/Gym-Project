@@ -147,6 +147,7 @@ footer{
 }
 .icon{
     margin: 0 0.5rem;
+    color: white;
 }
 .nutrition-sections{
     display: flex;
@@ -176,3 +177,26 @@ footer{
     color: var(--theme-color);
     font-size: 1rem;
 }
+@media screen and (max-width:800px) {
+    .header-elements,.auth-elements{
+        display: none;
+    }
+    header{
+     padding: 10px;
+    }
+    #main{
+        padding: 25px;
+    }
+    .category-image-container{
+        width: 100%;
+    }
+    .nutrition-sections{
+        flex-wrap: wrap;
+    }
+    .section{
+        width: 100%;
+    }
+    .Page-title{
+        font-size: 1.6rem;
+    }
+ }
