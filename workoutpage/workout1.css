@@ -38,6 +38,9 @@ header{
     justify-content: space-between;
     background-color:var(--dark--theme--color);
    }
+   .header-menu{
+    display: none;
+   }
 
 .options{
            background-color: var(--theme-color);
@@ -159,10 +162,11 @@ footer{
     transition: .5s ease;
 }
 .section:hover{
-   width: 25%;
+  transform: scale(1.1);
 }
 .section-image:hover{
     filter: brightness(100%);
+
 }
 
 .section-image{
@@ -182,6 +186,58 @@ footer{
    
     header{
      padding: 10px;
+     width: 96%;
+    }
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 70%;
+        min-width: 15rem;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        background-color: var(--dark--theme--color);
+        transform: translateX(100%);
+        transition: all .3s;
+        padding-right: 1rem;
+    } 
+    .menu-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5.6rem;
+        width: 100%;
+        color: var(--theme-color);
+        z-index: 3;
+        position: relative;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        border-bottom: 2px solid rgb(37, 37, 37);
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .menu-categories{
+        color: white;
+        list-style: none;
+        z-index: 3;
+        position: relative;
+        padding-left: 1.5rem;
+        margin: 0;
+        border-bottom: 2px solid rgb(37, 37, 37);
+    }
+    .menu-auth-elements{
+        display: flex;
+        position: relative;
+        padding: 1.5rem;
+        margin: 0;
+    }
+    .btn{
+        padding: 0.8rem;
+        min-width: 5rem;
+    }
+    .menu-category{
+        padding: 1rem 0;
     }
     #main{
         padding: 25px;
@@ -189,7 +245,7 @@ footer{
     .category-image-container{
         width: 100%;
     }
-    .workout-sections{
+    .nutrition-sections{
         flex-wrap: wrap;
     }
     .section{
@@ -198,11 +254,11 @@ footer{
     .Page-title{
         font-size: 1.6rem;
     }
+    footer{
+        padding: 0 1rem;
+    }
     .icon-tabler-menu-2{
         display:block;
         padding-left: 1rem;
-    }
-    footer{
-        padding: 0 1rem;
     }
  }
