@@ -79,6 +79,11 @@ header>*{
     border-style: none;
     border: 2px solid var(--border-color)
 }
+
+.header-menu,.icon-tabler-menu-2{
+    display: none;
+}
+
 .btn{
     min-width: none;
     padding: 0.6rem 1.2rem;
@@ -176,6 +181,7 @@ footer{
     color: var(--theme-color);
     font-size: 1rem;
 }
+
 @media screen and (max-width:800px) {
     .header-elements,.auth-elements{
         display: none;
@@ -184,6 +190,50 @@ footer{
     header{
      padding: 10px;
      width: 96%;
+    }
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        background-color: var(--dark--theme--color);
+    }
+    .menu-title{
+        height: 4.65rem;
+        width: 100%;
+        color: var(--theme-color);
+        z-index: 3;
+        position: relative;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        border-bottom: 2px solid rgb(37, 37, 37);
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .menu-categories{
+        color: white;
+        list-style: none;
+        z-index: 3;
+        position: relative;
+        padding-left: 1.5rem;
+        margin: 0;
+        border-bottom: 2px solid rgb(37, 37, 37);
+    }
+    .auth-elements{
+        display: flex;
+        position: relative;
+        padding: 1.5rem;
+        margin: 0;
+    }
+    .btn{
+        padding: 0.8rem;
+        min-width: 5rem;
+    }
+    .menu-category{
+        padding: 1rem 0;
     }
     #main{
         padding: 25px;
